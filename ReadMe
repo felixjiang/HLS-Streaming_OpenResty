@@ -42,3 +42,4 @@ git status: list changes you made in the branch you are currently on
 
 git clone <git-repo-URL>: clone a remote git repo to local with the origin being the remote repo
 git pull origin | git pull origin <branch-name>: get the commits on origin and merge them to the branch you are currently on
+git config --global credential.helper 'cache --timeout=3600': Cache credential for 1 hour.
