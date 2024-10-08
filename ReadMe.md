@@ -1,23 +1,30 @@
 
 Build an image from Dockerfile
+
 ``docker build -t <image-name> <dockerfile-path>`
 
 Run a container in the background (detached) from an image with port and volume mappings
+
 `docker run --name <container-name> <image`
 
 Example: `sudo docker run -d --name openresty_encrypted --network streaming_network -p 8080:80 -p 8443:443 -p 1935:1935 -v /etc/cjiang/hls_encrypted:/tmp/hls openresty-rtmp-hls-encrypted`
 
 Run a container in interactive mode
+
 `sudo docker run -it --name ffmpeg-test --network streaming_network ffmpeg-rpi`
 
 Push video stream
+
 `ffmpeg -re -i file_example_MP4_1280_10MG.mp4 -c copy -f flv -flvflags no_duration_filesize rtmp://openresty_encrypted/hls/stream_name`
 
 Switch to a container command-line in the docker environment
+
 `docker exec -it openresty_encrypted bash`
-ls /tmp/hls/
+
+`ls /tmp/hls/`
 
 List running | all containers
+
 `docker ps` | `docker ps -a`
 
 
