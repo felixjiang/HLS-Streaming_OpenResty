@@ -43,3 +43,7 @@ git status: list changes you made in the branch you are currently on
 git clone <git-repo-URL>: clone a remote git repo to local with the origin being the remote repo
 git pull origin | git pull origin <branch-name>: get the commits on origin and merge them to the branch you are currently on
 git config --global credential.helper 'cache --timeout=3600': Cache credential for 1 hour.
+
+
+
+ Alternative methods are detailed at: https://medium.com/@haroldfinch01/git-keeps-prompting-me-for-a-password-c8cd76c38b07#:~:text=If%20Git%20keeps%20prompting%20you,URLs%20for%20your%20remote%20repository.
