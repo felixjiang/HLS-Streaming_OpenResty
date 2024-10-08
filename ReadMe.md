@@ -4,7 +4,8 @@ Build an image from Dockerfile
 
 Run a container in the background (detached) from an image with port and volume mappings
 `docker run --name <container-name> <image`
-`sudo docker run -d --name openresty_encrypted --network streaming_network -p 8080:80 -p 8443:443 -p 1935:1935 -v /etc/cjiang/hls_encrypted:/tmp/hls openresty-rtmp-hls-encrypted`
+
+Example: `sudo docker run -d --name openresty_encrypted --network streaming_network -p 8080:80 -p 8443:443 -p 1935:1935 -v /etc/cjiang/hls_encrypted:/tmp/hls openresty-rtmp-hls-encrypted`
 
 Run a container in interactive mode
 `sudo docker run -it --name ffmpeg-test --network streaming_network ffmpeg-rpi`
