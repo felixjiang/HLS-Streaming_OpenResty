@@ -27,18 +27,31 @@ https://ddns-kangcheng.microfish.win:8443/hls/stream_name.m3u8
 ## Git commands
 
 git checkout <branch-name>
+
 git checkout -b <branch_name>: create a branch and switch to it
+
 git add . | git add <file-name>
+
 git commit -m '<comment>'
+
 git push origin | git push origin <branch-name>
 
+
 git init
+
 git remote add <remote-git-URL>
+
 git remote set-url origin <new-remote-git-URL>
+
 git remote -v
+
 git branch: show the branch you are currently on
+
 git push -u origin <branch-name>: Push the branch-name to origin with upstream tracking
+
 git status: list changes you made in the branch you are currently on 
 
+
 git clone <git-repo-URL>: clone a remote git repo to local with the origin being the remote repo
+
 git pull origin | git pull origin <branch-name>: get the commits on origin and merge them to the branch you are currently on
